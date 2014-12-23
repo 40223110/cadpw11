@@ -444,6 +444,42 @@ class Gear(object):
     </html>
     '''
         return outstring
+    #@+node:2014python.20141223111718.1683: *3* w12_7
+    @cherrypy.expose
+    def w12_6(self, *args, **kwargs):
+        outstring = '''
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>第十二週第六個程式: 字串與變數串接</title>
+    </head>
+    <body>
+    <h1>第十二週第六個程式: 字串與變數串接</h1>
+     
+    <script type="text/javascript">
+     
+    //Create and initialize your variables
+     
+    var firstText = "Hello";
+     
+    var secondText = "World!";
+
+    var 數值 = 123;
+     
+    //Resulting value of assignment is Hello World!
+     
+    var message = firstText + ' ' + secondText + '  '+ 數值;
+     
+    //write result on the page
+     
+    document.write(message);
+     
+    </script>
+       
+    </body>
+    </html>
+    '''
+        return outstring
     #@-others
 #@-others
 root = Gear()
